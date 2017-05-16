@@ -1,0 +1,80 @@
+.pb {
+  width: 200px;
+  height: 340px;
+  margin: 0 100;
+  background: url('../img/capguy-walk.png') left center;
+  animation: play 1s steps(10) infinite;
+}
+
+@keyframes play {
+    100% { background-position: -1820px; }
+}
+body {
+  background-color: #4AADB3;
+  padding: 0 0;
+  margin:  0 0 ;
+  left:0
+}
+ul{
+  width: 600px;
+  margin: 0 0;
+  display: inline;
+  position: fixed;
+  right: 0px;
+
+}
+ul li {
+  display: inline-block;
+  background: #242424;
+  padding: 15px;
+  width: 200px;
+  margin: 0 0;
+
+}
+a:link, a:visited {
+  margin: 0 0;
+  color: white;
+}
+
+.transition {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 25%;
+  transition: all .5s;
+  background-color: #8456D3;
+  display: inline-block;
+}
+
+
+.transition:hover {
+  width: 10vw;
+  height: 10vw;
+  background-color: #127FFC;
+    border-radius:50%;
+}
+
+.percent{
+  animation: percent 2s;
+  animation-iteration-count: infinite;
+  height: 20vw;
+  width: 20vw;
+  border-radius: 50%;
+  background-color: #EB055A;
+  position: relative;
+  }
+
+  .percent:hover{
+
+
+    border-radius: 50%;
+    transition: all .5s;
+    background-color: yellow;
+
+    }
+
+@keyframes percent {
+  0% {left:10vw; top: 20vh;}
+50% { top: 50vh; left: 3px;}
+  70% {left:70vw; top: 20vh;}
+  100% {left:10vw; top: 20vh;}
+}
